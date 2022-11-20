@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Basketball point incrementor</title>
+    <link rel="stylesheet" href="inc.css">
+    <link href="https://fonts.cdnfonts.com/css/cursed-timer-ulil" rel="stylesheet">
+</head>
+<body>
+    <h1 class="mainName">BASKETBALL POINTS TABLE</h1>
+    <div class="container">
+        <div class="HomeTeam">
+            <p class="home name">Home</p>
+            <div class="Display">
+                <p class="Home Point" id="homepoint">0</p>
+            </div>
+            <div class="Homepointinc">
+                <button class="button left homeincbutton" onclick="homeincby1()">+1</button>
+                <button class="button middle homeincbutton" onclick="homeincby2()">+2</button>
+                <button class="button middle homeincbutton" onclick="homeincby3()">+3</button>
+                <button class="button right homeincbutton" onclick="homeincby4()">-1</button>
+            </div>
+        </div>
+        <div class="GuestTeam">
+            <p class="guest name">Guest</p>
+            <div class="Display">
+                <p class="Guest Point" id="guestpoint">0</p>
+            </div>
+            <div class="Guestpointinc">
+                <button class="button left guestincbutton" onclick="guestincby1()">+1</button>
+                <button class="button middle guestincbutton" onclick="guestincby2()">+2</button>
+                <button class="button middle guestincbutton" onclick="guestincby3()">+3</button>
+                <button class="button right homeincbutton" onclick="guestincby4()">-1</button>
+            </div>
+        </div>
+        <div class="NewGame">
+            <button class="newgamebutton" onclick="resetgame()">
+                <p class="resettext">New Game</p></button>
+        </div>
+    </div>
+</body>
+<script src="inc.js"></script>
+</html>
